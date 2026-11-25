@@ -1,0 +1,46 @@
+# Secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Build files
+*.egg-info/
+build/
+dist/
+
+# Testing, coverage, linters
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+.mypy_cache/
+
+# Notebooks and logs
+.ipynb_checkpoints/
+*.log
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Data: generated files are rebuilt from the seed, never committed
+data/*
+!data/synthetic/
+data/synthetic/*
+!data/synthetic/.gitkeep
+
+# KoSIT validator downloads (fetched by Docker)
+validator/*.jar
+validator/configuration/
